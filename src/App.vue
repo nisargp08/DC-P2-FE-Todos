@@ -1,9 +1,9 @@
 <template>
 <div id="app">
     <div class="min-h-screen bg-primary">
-        <div class="flex flex-col md:max-w-screen-md md:mx-auto">
+        <div class="flex flex-col h-full md:max-w-screen-md md:mx-auto">
             <h1 class="font-raleway font-bold text-4xl text-white text-center mt-8">#todo</h1>
-            <tabs :tabs="tabs" :initialTab="initialTab" class="mx-8">
+            <tabs :tabs="tabs" :initialTab="initialTab" class="mx-8 flex-1">
                 <!-- 'All' Tab -->
                 <template slot="tab-head-all">
                     <p>All</p>
@@ -75,6 +75,9 @@
                 </template>
 
             </tabs>
+            <footer class="text-center my-16">
+              <p class="font-montserrat font-bold text-sm leading-6 text-gray-500">Nisarg Patel @ Devchallenges.io</p>
+            </footer>
         </div>
     </div>
 </div>
